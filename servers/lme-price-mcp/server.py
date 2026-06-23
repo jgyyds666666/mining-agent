@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("lme-price")
+mcp = FastMCP("lme-price", port=8003, host="0.0.0.0")
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "lme_prices.json")
 
@@ -100,4 +100,4 @@ def get_trend(commodity: str, days: int = 30) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", port=8003)
+    mcp.run(transport="sse")

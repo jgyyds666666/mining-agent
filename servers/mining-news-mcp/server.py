@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("mining-news")
+mcp = FastMCP("mining-news", port=8001, host="0.0.0.0")
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "news_samples.json")
 
@@ -87,4 +87,4 @@ def fetch_article(url: str) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", port=8001)
+    mcp.run(transport="sse")

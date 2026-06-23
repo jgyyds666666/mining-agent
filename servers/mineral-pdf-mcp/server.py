@@ -4,7 +4,7 @@ from typing import Optional
 
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("mineral-pdf")
+mcp = FastMCP("mineral-pdf", port=8002, host="0.0.0.0")
 
 # ---------------------------------------------------------------------------
 # Mock NI 43-101 resource data — approximate Pilgangoora (Pilbara Minerals)
@@ -129,4 +129,4 @@ def extract_resources(pdf_url: str) -> str:
 
 
 if __name__ == "__main__":
-    mcp.run(transport="sse", port=8002)
+    mcp.run(transport="sse")
