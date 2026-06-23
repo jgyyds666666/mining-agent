@@ -2,6 +2,7 @@
 
 import json
 import logging
+import os
 from typing import Any
 
 from mcp.client.sse import sse_client
@@ -9,12 +10,21 @@ from mcp.client.session import ClientSession
 
 logger = logging.getLogger(__name__)
 
-# MCP 服务器地址（docker-compose service 名 + 端口）
-MCP_SERVERS = {
-    "mining-news": "http://mining-news-mcp:8001/sse",
-    "mineral-pdf": "http://mineral-pdf-mcp:8002/sse",
-    "lme-price": "http://lme-price-mcp:8003/sse",
-}
+# MCP 服务器地址
+# 本地运行用 localhost，Docker 模式下通过 MCP_HOST=remote 使用 service 名
+if os.environ.get("MCP_HOST") == "remote":
+    MCP_SERVERS = {
+        "mining-news": "http://mining-news-mcp:8001/sse",
+        "mineral-pdf": "http://mineral-pdf-mcp:8002/sse",
+        "lme-price": "http://lme-price-mcp:8003/sse",
+    }
+else:
+    # 默认本地模式
+    MCP_SERVERS = {
+        "mining-news": "http://localhost:8001/sse",
+        "mineral-pdf": "http://localhost:8002/sse",
+        "lme-price": "http://localhost:8003/sse",
+    }
 
 
 def _extract_text(result: Any) -> str:
