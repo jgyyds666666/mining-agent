@@ -1,0 +1,47 @@
+services:
+  mining-news-mcp:
+    build: ./servers/mining-news-mcp
+    container_name: mining-news-mcp
+    ports:
+      - "8001:8001"
+    networks:
+      - mining-net
+    restart: unless-stopped
+
+  mineral-pdf-mcp:
+    build: ./servers/mineral-pdf-mcp
+    container_name: mineral-pdf-mcp
+    ports:
+      - "8002:8002"
+    networks:
+      - mining-net
+    restart: unless-stopped
+
+  lme-price-mcp:
+    build: ./servers/lme-price-mcp
+    container_name: lme-price-mcp
+    ports:
+      - "8003:8003"
+    networks:
+      - mining-net
+    restart: unless-stopped
+
+  agent:
+    build: ./agent
+    container_name: mining-agent
+    depends_on:
+      - mining-news-mcp
+      - mineral-pdf-mcp
+      - lme-price-mcp
+    environment:
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY:-}
+      - DEEPSEEK_BASE_URL=${DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+    networks:
+      - mining-net
+    # 交互模式: docker compose run agent
+    stdin_open: true
+    tty: true
+
+networks:
+  mining-net:
+    driver: bridge

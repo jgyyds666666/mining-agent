@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "mining-news": {
+      "description": "矿业新闻聚合 — 搜索和获取新闻全文",
+      "transport": "sse",
+      "url": "http://localhost:8001/sse"
+    },
+    "mineral-pdf": {
+      "description": "NI 43-101 资源量 PDF 解析 — 提取 Indicated/Inferred 储量",
+      "transport": "sse",
+      "url": "http://localhost:8002/sse"
+    },
+    "lme-price": {
+      "description": "LME 大宗商品价格行情 — 当前价格和趋势",
+      "transport": "sse",
+      "url": "http://localhost:8003/sse"
+    }
+  }
+}
