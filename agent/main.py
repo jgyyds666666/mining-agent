@@ -26,7 +26,7 @@ async def main():
         print("  矿权日报 Agent v1.0")
         print("  输入查询内容，例如：")
         print('    "给我生成一份关于 Pilbara 锂矿的今日简报"')
-        print("    "生成一份关于赣锋锂业的报告"")
+        print('    "生成一份关于赣锋锂业的报告"')
         print("  输入 q 或 exit 退出")
         print("=" * 50)
         query = input("\n📝 请输入查询: ").strip()
