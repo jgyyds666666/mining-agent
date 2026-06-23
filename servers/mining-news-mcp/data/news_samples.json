@@ -1,0 +1,57 @@
+[
+  {
+    "id": "news-001",
+    "title": "Pilbara Minerals 发布 2026 财年产量指引，锂精矿产量预计增长 25%",
+    "source": "MINING.COM",
+    "url": "https://example.com/pilbara-guidance-2026",
+    "summary": "Pilbara Minerals (ASX: PLS) 今日发布 2026 财年产量指引，预计锂精矿产量将达到 70-75 万吨，同比增长约 25%。公司表示 Pilgangoora 项目二期扩建工程已按计划完成，产能进一步提升。",
+    "content": "Pilbara Minerals (ASX: PLS) 今日发布 2026 财年产量指引，预计锂精矿产量将达到 70-75 万吨，同比增长约 25%。公司表示 Pilgangoora 项目二期扩建工程已按计划完成，产能进一步提升。CEO Dale Henderson 表示，尽管全球锂价有所波动，但公司对长期需求保持乐观，尤其是来自电动汽车产业链的需求。公司同时宣布了 5000 万美元的勘探预算，用于 Pilgangoora 周边的绿地勘探项目。",
+    "author": "Mariaan Webb",
+    "date": "2026-06-22",
+    "category": "production"
+  },
+  {
+    "id": "news-002",
+    "title": "Pilbara Minerals 与赣锋锂业签署 5 年锂精矿包销协议",
+    "source": "Reuters",
+    "url": "https://example.com/pilbara-ganfeng-offtake",
+    "summary": "Pilbara Minerals 与中国赣锋锂业签署了为期 5 年的锂精矿包销协议，每年供应 30 万吨锂精矿，价格基于市场指数浮动。",
+    "content": "Pilbara Minerals 与中国赣锋锂业签署了为期 5 年的锂精矿包销协议，每年供应 30 万吨锂精矿。协议采用市场指数浮动定价机制，参考 Fastmarkets 和 SMM 的锂精矿评估价。该协议覆盖 Pilgangoora 项目约 40% 的年产能，是 Pilbara 目前最大的单一 off-take 协议。首批货物预计在 2026 年 Q3 发运。",
+    "author": "Melanie Burton",
+    "date": "2026-06-18",
+    "category": "offtake"
+  },
+  {
+    "id": "news-003",
+    "title": "Pilgangoora 项目资源量更新，总资源量提升至 4.2 亿吨",
+    "source": "Australian Mining",
+    "url": "https://example.com/pilgangoora-resource-update",
+    "summary": "Pilbara Minerals 更新了 Pilgangoora 项目的矿产资源估算，总资源量提升至 4.2 亿吨，Li2O 平均品位 1.4%。新钻孔数据使 Indicated 资源量增加了 15%。",
+    "content": "Pilbara Minerals 更新了 Pilgangoora 项目的矿产资源估算（MRE），总资源量提升至 4.2 亿吨，Li2O 平均品位 1.4%。新钻孔数据使 Indicated 资源量增加了 15%，主要来自 Pilgangoora 矿床的深度延伸区域。公司计划在 2026 年下半年进行进一步的加密钻探，以将更多 Inferred 资源升级为 Indicated 类别。更新的矿产资源估算将纳入下一版 NI 43-101 技术报告。",
+    "author": "Staff Reporter",
+    "date": "2026-06-15",
+    "category": "resource"
+  },
+  {
+    "id": "news-004",
+    "title": "西澳锂矿商面临劳动力成本上升压力，Pilbara 仍保持行业领先",
+    "source": "The West Australian",
+    "url": "https://example.com/wa-labour-costs",
+    "summary": "西澳矿业劳动力短缺推高运营成本，但 Pilbara Minerals 凭借 Pilgangoora 项目的高品位优势，仍保持行业最低现金成本之一。",
+    "content": "西澳矿业劳动力短缺持续推高运营成本，尤其是珀斯和 Port Hedland 地区的采矿工程师和重型设备操作员薪资上涨了 8-12%。但 Pilbara Minerals 凭借 Pilgangoora 项目的高品位（1.5% Li2O vs 行业平均 1.2%）优势，仍保持行业最低现金成本之一，目前约为 520 美元/吨精矿。分析师指出，成本控制能力将决定下一轮锂价周期中各矿商的生存能力。",
+    "author": "Daniel Newell",
+    "date": "2026-06-20",
+    "category": "industry"
+  },
+  {
+    "id": "news-005",
+    "title": "中国锂盐价格企稳，碳酸锂期货反弹至 9.5 万元/吨",
+    "source": "上海有色网 SMM",
+    "url": "https://example.com/china-lithium-price-june",
+    "summary": "中国碳酸锂期货主力合约本周反弹至 9.5 万元/吨，下游正极材料企业补库需求带动成交回暖。SMM 预计短期锂价维持区间震荡。",
+    "content": "中国碳酸锂期货主力合约本周反弹至 9.5 万元/吨，较月初低点 8.8 万元/吨上涨约 8%。下游正极材料企业补库需求带动成交回暖，磷酸铁锂和三元材料排产环比增长 5-8%。SMM 预计短期锂价在 9-10 万元/吨区间震荡，中期需关注南美盐湖项目新增产能释放情况。锂精矿价格同步企稳，6% Li2O 精矿 CIF 中国价格维持在 850-900 美元/吨。",
+    "author": "SMM 锂业组",
+    "date": "2026-06-21",
+    "category": "price"
+  }
+]
